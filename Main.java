@@ -72,7 +72,7 @@ class Main {
         {
           int st=mixedLetInts[i];
           mixedLet[i]=(char)st;
-           System.out.print("\n"+mixedLetInts[i]);
+           System.out.print("\n"+mixedLet[i]);
         }  
         File fileName3=new File("Mixed_letters.txt");
         PrintWriter outFile3 = new PrintWriter(fileName3);
@@ -146,16 +146,16 @@ class Main {
     System.out.println("Welcome to the password generator! \n\n\nPlease select which type of password you would like to generate!\n\n1.Lowercase letters\n2.Uppercase letters\n3.Uppercase and Lowercase letters\n4.Uppercase, Lowercase, and Numbers\n5.Uppercase, Lowercase, Numbers and Symbols\n0.Exit\n\nEnter Selection by typing numbers 1,2,3,4,5 or 0 to Exit:");
      type=scan.nextInt();
      genPassword(type);
-           System.out.println("Do you wish to continue? enter 1 for yes or other for no");
+           System.out.println("\nDo you wish to continue? enter 1 for yes or other for no");
            int pe=scan.nextInt();
 
            while(pe==1)
            {
+             System.out.println("\nPlease select which type of password you would like to generate!\n\n1.Lowercase letters\n2.Uppercase letters\n3.Uppercase and Lowercase letters\n4.Uppercase, Lowercase, and Numbers\n5.Uppercase, Lowercase, Numbers and Symbols\n0.Exit\n\nEnter Selection by typing numbers 1,2,3,4,5 or 0 to Exit:");
+                  type=scan.nextInt();
            genPassword(type);
-            System.out.println("Do you wish to continue? enter 1 for yes or other for no");
+            System.out.println("\nDo you wish to continue? enter 1 for yes or other for no");
            pe=scan.nextInt();
-           System.out.println("Welcome to the password generator! \n\n\nPlease select which type of password you would like to generate!\n\n1.Lowercase letters\n2.Uppercase letters\n3.Uppercase and Lowercase letters\n4.Uppercase, Lowercase, and Numbers\n5.Uppercase, Lowercase, Numbers and Symbols\n0.Exit\n\nEnter Selection by typing numbers 1,2,3,4,5 or 0 to Exit:");
-     type=scan.nextInt();
            }
 
      scan.close();
