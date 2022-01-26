@@ -23,7 +23,7 @@ class Main {
 
         }  
         File fileName1=new File("Lower.txt");
-                File fileName11=new File("Lowerpw.txt");
+        File fileName11=new File("Lowerpw.txt");
         PrintWriter outFile1 = new PrintWriter(fileName1);
         PrintWriter outFile11 = new PrintWriter(fileName11);
         for(int ch:lowerInts)
@@ -31,7 +31,6 @@ class Main {
         outFile1.print(ch);   
         outFile11.print((char)ch);
         }
-       // inputFile1.close();   
         outFile1.close();
         outFile11.close();
 
@@ -58,10 +57,9 @@ class Main {
         PrintWriter outFile2 = new PrintWriter(fileName2);
         PrintWriter outFile22 = new PrintWriter(fileName22);
         for(int ch:upperInts)
-        {
-        outFile2.print(ch);     //   inputFile2.close();
-        outFile22.print((char)ch);     //   inputFile2.close();
-        }
+        outFile2.print(ch);    
+        for(int ch:upper)
+        outFile22.print(ch); 
         outFile2.close();
         outFile22.close();
 
@@ -89,9 +87,9 @@ class Main {
         PrintWriter outFile3 = new PrintWriter(fileName3);
         PrintWriter outFile33 = new PrintWriter(fileName33);
         for(int ch:mixedLetInts)
-        {
-        outFile3.print(ch);       // inputFile3.close();
-        outFile33.print((char)ch);       // inputFile3.close();}
+        outFile3.print(ch);   
+        for(int ch:mixedLet)   
+        outFile33.print(ch);      
         outFile3.close();
         outFile33.close();
 
@@ -120,10 +118,10 @@ class Main {
         File fileName44=new File("Mixed_letters_numbers.txt");
         PrintWriter outFile4 = new PrintWriter(fileName4);
         PrintWriter outFile44 = new PrintWriter(fileName44);
-        for(int ch:mixedLetNumInts){
-        outFile4.print(ch);      //  inputFile4.close();
-        outFile44.print((char)ch);      //  inputFile4.close();
-        }
+        for(int ch:mixedLetNumInts)
+        outFile4.print(ch);  
+         for(int ch:mixedLetNum)
+        outFile44.print(ch); 
         outFile4.close();
         outFile44.close();
 
@@ -148,10 +146,10 @@ class Main {
         File fileName55=new File("AllCharspw.txt");
         PrintWriter outFile5 = new PrintWriter(fileName5);
         PrintWriter outFile55 = new PrintWriter(fileName55);
-        for(int ch:upperallCharsInts){
-        outFile5.print(ch);     //   inputFile5.close();
-        outFile55.print((cahr)ch);     //   inputFile5.close();
-        }
+        for(int ch:upperallCharsInts)
+        outFile5.print(ch);    
+        for(int ch:upperallChars)
+        outFile55.print(ch);    
         outFile5.close();
         outFile55.close();
 
